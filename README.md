@@ -1,16 +1,48 @@
-# React + Vite
+# Phillies Qualifying Offer Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that determines the monetary value of the upcoming qualifying offer and displays the amount along with visualizations such as Histograms and Table with search functions.
 
-Currently, two official plugins are available:
+![App Screenshot](screenshot.png)
+## Features
+- Fetches live data on every load to ensure accuracy
+- Utilizes DOM Parse and Regex cleaning to handle malformed data
+- Identifies latest year in the dataset and filter for the "past season" dynamically
+- Filters for the MLB Level only
+- Uses the Recharts library to visualize the distribution of the top 125 earners
+- A searchable table that allows users to search for players' exact salary within the dataset
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+* **Framework:** React 18 + Vite
+* **Visualization:** Recharts
+* **Data Processing:** Native JavaScript (`fetch`, `DOMParser`, `Array` methods)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run Locally
+- This application uses the Vite Proxy to route requests to access the database
 
-## Expanding the ESLint configuration
+### Prerequisites
+* Node.js (v14 or higher)
+* npm (usually comes with Node)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation Steps
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/mperform/Phillies-take-home.git](https://github.com/mperform/Phillies-take-home.git)
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the Application:**
+    Click the URL shown in your terminal (usually `http://localhost:5173/`).
+
+## Notes
+- AI was used for CSS styling, syntax lookup, and visualization graphing.

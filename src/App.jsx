@@ -119,7 +119,7 @@ function App() {
           <>
           <div className="result-card">
             <h2>
-              {mostRecentYear ? `${mostRecentYear} Qualifying Offer` : 'Projected Qualifying Offer'}
+              {mostRecentYear ? `${mostRecentYear + 1} Qualifying Offer` : 'Projected Qualifying Offer'}
             </h2>
             <div className="big-number">
               {formatCurrency(qualifyingOffer)}
